@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "1e6e7333-3bd6-4014-b187-1a1173569fa9",
+		"name": "WSToken",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generar Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://wstoken-e4bbh5cqfcdrghe3.canadacentral-01.azurewebsites.net/api/token/generar",
+					"protocol": "https",
+					"host": [
+						"wstoken-e4bbh5cqfcdrghe3",
+						"canadacentral-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"token",
+						"generar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validar Token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer MTc2MjY2ODcyNDc0MzoxNzYyNjcwNTI0NzQzOmY1NWVlZDUzZTVjMmVhM2QzNzIwNmVmMGI0ZjAzOTRlNDIzNmI0NzRmNmE1Mjc3ODhjOGIwMzIwZjk2MWQzMTg="
+					}
+				],
+				"url": {
+					"raw": "https://wstoken-e4bbh5cqfcdrghe3.canadacentral-01.azurewebsites.net/api/token/validar",
+					"protocol": "https",
+					"host": [
+						"wstoken-e4bbh5cqfcdrghe3",
+						"canadacentral-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"token",
+						"validar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://wstoken-e4bbh5cqfcdrghe3.canadacentral-01.azurewebsites.net/api/token/status",
+					"protocol": "https",
+					"host": [
+						"wstoken-e4bbh5cqfcdrghe3",
+						"canadacentral-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"token",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

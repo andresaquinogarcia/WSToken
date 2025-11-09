@@ -68,6 +68,6 @@ public class TokenController
     */
     @GetMapping("/token/status")
     public ResponseEntity<String> health() {
-        return ResponseEntity.ok("OK");
+        return ResponseEntity.ok("Servicio disponible");
     }
 }
